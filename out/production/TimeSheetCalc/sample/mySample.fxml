@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #dee0e3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox alignment="CENTER" layoutY="70.0" prefHeight="330.0" prefWidth="110.0" spacing="68.0" style="-fx-background-color: #071d3d;">
+         <children>
+            <Label text="Days Of Month" textFill="#dee0e3">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label text="Holidays#" textFill="#dee0e3" />
+            <Label text="Fridays#" textFill="#dee0e3" />
+            <Label text="1st D Of The Shift" textFill="#dee0e3" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="110.0" layoutY="70.0" prefHeight="330.0" prefWidth="80.0" spacing="60.0" style="-fx-background-color: #071d3d;">
+         <children>
+            <ChoiceBox fx:id="chbDaysOfMonth" prefHeight="25.0" prefWidth="65.0" />
+            <ChoiceBox fx:id="chbHolidays" layoutX="28.0" layoutY="163.0" prefHeight="25.0" prefWidth="65.0" />
+            <ChoiceBox fx:id="chbFridays" layoutX="28.0" layoutY="175.0" prefHeight="25.0" prefWidth="65.0" />
+            <ChoiceBox fx:id="chbFirstDay" layoutX="28.0" layoutY="188.0" prefHeight="25.0" prefWidth="65.0" />
+         </children>
+      </VBox>
+      <VBox prefHeight="70.0" prefWidth="190.0" style="-fx-background-color: #071d3d;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/timesheet_30px.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="17.0" prefWidth="118.0" text="TimeSheet Calc" textFill="#dee0e3">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator maxWidth="-Infinity" minWidth="-Infinity" prefWidth="140.0">
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+            </Separator>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="190.0" layoutY="-1.0" prefHeight="400.0" prefWidth="210.0">
+         <children>
+            <Label text="Working Dificit Hours">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDificitHours" layoutX="10.0" layoutY="10.0" text="20">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Separator maxWidth="-Infinity" prefWidth="145.0" style="-fx-background-color: #5d6063;" />
+            <Label fx:id="lblOfficeHours" layoutX="10.0" layoutY="30.0" text="195">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="Total Office Hours">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

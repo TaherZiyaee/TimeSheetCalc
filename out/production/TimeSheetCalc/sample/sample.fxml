@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" style="-fx-background-color: #c7c3c9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="250.0" layoutY="125.0" prefHeight="200.0" prefWidth="250.0" spacing="10.0">
+         <children>
+            <Label text="Work Dificit Hours">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDificit" layoutX="10.0" layoutY="10.0" text="-10">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutY="50.0" prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #3b1157;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Label text="Shift Start Day" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <JFXRadioButton fx:id="rdoShift21" text="21st" textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="rdoShift22" layoutX="19.0" layoutY="53.0" text="22nd" textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Days Of Month" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <JFXRadioButton fx:id="rdoDays29" text="29 days" textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="rdoDays30" layoutX="19.0" layoutY="53.0" text="30 days" textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="rdoDay31" layoutX="34.0" layoutY="65.0" text="31 days" textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Fridays Of Month" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <JFXRadioButton fx:id="rdoFriday4" text="4 days" textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="rdoFriday5" layoutX="19.0" layoutY="53.0" text="5 days" textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Holiday Of Month" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <JFXComboBox fx:id="cmbHoliday" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
