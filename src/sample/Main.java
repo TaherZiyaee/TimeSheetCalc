@@ -15,8 +15,6 @@ public class Main extends Application {
         primaryStage.setTitle("ISC TimeSheet Calculator");
         primaryStage.setScene(new Scene(root));
 
-        Controller controller = new Controller();
-
         primaryStage.show();
 
 
